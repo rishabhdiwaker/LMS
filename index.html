@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMS</title>
+    <link rel="stylesheet" href="style.css" class="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li style="float: left">Library System</li>
+          <li>Logout</li>
+          <li>Contact Us</li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#books">Books</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="content-wrapper">
+        <table>
+          <caption class="cap" id="books">
+            Books
+          </caption>
+          <thead>
+            <tr>
+              <th>Book ID</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Genre</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <a href="#">Book Title 1</a>
+                <table class="innertable">
+                  <tr>
+                    <td>Publication Date:2005</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count:253</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN:852-7413698520</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Author Name 1</td>
+              <td>Genre 1</td>
+              <td>Available</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <a href="#"> Book Title 2</a>
+                <table class="innertable">
+                  <tr>
+                    <td>Publication Date:2009</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count:480</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN:852-8513698520</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Author Name 2</td>
+              <td>Genre 2</td>
+              <td>Available</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>
+                <a href="#">Book Title 3</a>
+                <table class="innertable">
+                  <tr>
+                    <td>Publication Date:1998</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count:2503</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN:852-7413697892</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Author Name 3</td>
+              <td>Genre 3</td>
+              <td>Not Available</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="content-wrapper">
+        <form>
+          <h1 id="register">Register</h1>
+          <hr />
+          <label for="fname"><b>First Name</b></label>
+          <input type="text" name="email" id="email" required />
+          <hr />
+          <label for="lname"><b>Last Name</b></label>
+          <input type="text" name="lname" id="lname" required />
+          <hr />
+          <label for="date"><b>Date Of Birth</b></label>
+          <input type="date" name="dob" id="date" required />
+          <hr />
+          <label for="age"><b>Age</b></label>
+          <input type="text" name="age" id="age" required />
+          <hr />
+          <label for="email"><b>Email</b></label>
+          <input type="text" name="email" id="email" required />
+          <hr />
+          <label for="psw"><b>Password</b></label>
+          <input type="password" name="psw" id="psw" required />
+          <hr />
+          <label for="psw-confirm"><b>Confirm Password</b></label>
+          <input type="password" name="psw-confirm" id="psw-confirm" required />
+          <hr />
+
+          <button type="submit" class="registerbtn">Register</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
