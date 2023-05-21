@@ -6,7 +6,23 @@ body {
     padding: 0;
     font-family: "Inter", sans-serif;
   }
-  #content-wrapper {
+  
+  
+ header {
+   background-color: black;
+   color: white;
+   position: sticky;
+   overflow:hidden;
+   top: 0;
+   width: 100%;
+ }
+li {
+    display: inline;
+    font-size: 25px;
+    padding: 12px;
+    float: right;
+  }
+#content-wrapper {
     background: white;
     display: flex;
     flex-direction: column;
@@ -14,19 +30,6 @@ body {
     width: 50vw;
     margin: 4em auto;
     padding: 2.5em;
-  }
-  li {
-    display: inline;
-    font-size: 25px;
-    padding: 12px;
-    float: right;
-  }
-  header {
-    background-color: black;
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
   }
   table,
   th,
